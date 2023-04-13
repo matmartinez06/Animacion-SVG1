@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.svg{
+    width: 500px;
+}
+
+#globo{
+    transform: scale(.2);
+    transform-origin: top right;
+    animation: animate 2s 3s forwards infinite alternate;
+}
+
+#background{
+    transform: translate(-100%);
+    animation: animate 3s forwards infinite alternate;
+}
+
+@keyframes animate {
+    to{
+        transform: unset;
+    }
+}
